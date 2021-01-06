@@ -1,0 +1,3 @@
+include ':CalendarHorizontal'
+include ':app'
+rootProject.name = "CalendarSample"
