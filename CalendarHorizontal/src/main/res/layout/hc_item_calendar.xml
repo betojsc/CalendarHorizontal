@@ -63,7 +63,7 @@
         android:layout_width="0dp"
         android:layout_height="8dp"
         android:contentDescription="@android:string/cancel"
-        android:src="@drawable/default_indicator"
+        android:src="@drawable/default_indicator_calendar"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
