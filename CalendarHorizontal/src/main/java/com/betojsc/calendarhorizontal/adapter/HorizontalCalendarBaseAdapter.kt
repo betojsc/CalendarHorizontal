@@ -127,7 +127,7 @@ abstract class HorizontalCalendarBaseAdapter<VH : DateViewHolder?, T : Calendar>
         }
     }
 
-    private inner class MyOnLongClickListener internal constructor(private val viewHolder: ViewHolder) : OnLongClickListener {
+    private inner class MyOnLongClickListener(private val viewHolder: ViewHolder) : OnLongClickListener {
         override fun onLongClick(v: View): Boolean {
             val calendarListener = horizontalCalendar.getCalendarListener() ?: return false
             val position = viewHolder.adapterPosition

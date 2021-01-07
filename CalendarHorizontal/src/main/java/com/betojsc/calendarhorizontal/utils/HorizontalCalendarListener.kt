@@ -3,13 +3,13 @@ package com.betojsc.calendarhorizontal.utils
 import com.betojsc.calendarhorizontal.HorizontalCalendarView
 import java.util.*
 
-abstract class HorizontalCalendarListener {
+interface HorizontalCalendarListener {
 
-    abstract fun onDateSelected(date: Calendar, position: Int)
+    fun onDateSelected(date: Calendar, position: Int)
 
-    open fun onCalendarScroll(calendarView: HorizontalCalendarView, dx: Int, dy: Int) {}
+    fun onCalendarScroll(calendarView: HorizontalCalendarView, dx: Int, dy: Int) {}
 
-    open fun onDateLongClicked(date: Calendar?, position: Int): Boolean {
+    fun onDateLongClicked(date: Calendar?, position: Int): Boolean {
         return false
     }
 }
